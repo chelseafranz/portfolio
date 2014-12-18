@@ -125,3 +125,7 @@
 .ch-item:hover .ch-info p {
 	opacity: 1;
 }
+
+#my_photo{
+	height: 300px;
+}
