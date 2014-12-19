@@ -159,3 +159,18 @@ gulp.task('test-server', function() {
   ]).on('change', $.livereload.changed);
 
 });
+
+gulp.task('clear_cache', function (done) {
+    return $.cache.clearAll(done);
+});
+
+gulp.task('images', ['clear_cache'],function () {
+    return gulp.src('app/images/**/*')
+        .pipe($.cache($.imagemin({
+            optimizationLevel: 3,
+            progressive: true,
+            interlaced: true
+        })))
+        .pipe(gulp.dest('dist/images'))
+        .pipe($.size());
+});
