@@ -1,55 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1250">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="Personal profile page - ZikZak" />
   <meta name="keywords" content="profile, theme, css, html, jquery, transition, transform" />
   <meta name="robots" content="noindex, follow" />
-  <title>Nitteo personal page</title>
-  <link rel='stylesheet' type='text/css' href='../turquoise.css'/> <!-- CHOOSE A COLOR SCHEMA: green.css, blue.css, brown.css, purple.css or turquoise.css -->   
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link rel='stylesheet' type='text/css' href='magnific-popup/magnific-popup.css'/>  
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/common.css" />
+  <title>Chelsea Codes</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link rel='stylesheet' type='text/css' href='turquoise.css'/>
+    <link rel='stylesheet' type='text/css' href='magnific-popup/magnific-popup.css'/> 
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
   <link rel="stylesheet" type="text/css" href="css/animate.css" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script type='text/javascript' src="script.js"></script>  
-  <script src="js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
-  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-  <script type='text/javascript' src='magnific-popup/jquery.magnific-popup.min.js'></script> 
-  <script src="magnific-popup/jquery.magnific-popup.js"></script> 
-  <script src="js/jquery.backstretch.min.js"></script>  
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-  <script type="text/javascript">
-            google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-                var mapOptions = {
-                    zoom: 11,
-                    center: new google.maps.LatLng(33.7550, -84.3900),
-                    scrollwheel: false, 
 
-                    styles: [{stylers:[{hue:'#2c3e50'},{saturation:250}]},{featureType:'road',elementType:'geometry',stylers:[{lightness:50},{visibility:'simplified'}]},{featureType:'road',elementType:'labels',stylers:[{visibility:'off'}]}]
-                };
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-                var mapElement = document.getElementById('map');
-
-                var map = new google.maps.Map(mapElement, mapOptions);
-                
-                 var marker = new google.maps.Marker({
-                            position: map.getCenter(),
-                            map: map,
-                            title: 'Click to zoom'
-                            });
-            }
-  </script>
-  <!--USE TO GOOGLE MAPS AND CHANGE YOUR GPS ON LINE 33. EXAMPLE FOR NEW YORK: 40.747257,-74.003906.-->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
   </head>   
 <body>
   <div id="preloader">
@@ -102,7 +83,8 @@
               <p class="skills-line" id="line-1"><span>JavaScript</span></p>
               <p class="skills-line" id="line-2"><span>JQuery</span></p>
               <p class="skills-line" id="line-3"><span>Angular</span></p>
-              <p class="skills-line" id="line-4"><span>HTML5/CSS</span></p> 
+              <p class="skills-line" id="line-4"><span>Backbone</span></p>
+              <p class="skills-line" id="line-5"><span>HTML5/CSS</span></p> 
             </div>
           </div>     
         </div>
@@ -111,13 +93,13 @@
               <div class="headlines" id="headlines-resume">RESUME</div>
               <div id="resume-box">
                 <div class="selection-resume">
-                <div class="icons"><i class="fa fa-pencil-square-o"></i></div>
+                <div class="icons"><i class="fa fa-code"></i></div>
                 <!--CHANGE YOUR EMPLOYMENT-->  
-                <p class="company">Freelancer</p>
+                <p class="company">The Iron Yard</p>
                 <!--CHANGE YOUR STATUS--> 
-                <p class="position">Copywriter</p>
+                <p class="position">Front End Engineering</p>
                 <!--CHANGE TEXT ABOUT EMPLOYMENT-->
-                <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh alte rivero nantasy muldaos kelty.</p>
+                <p class="description">Learned fundamentals of front-ed web development-- including a variety of JavaScript frameworks and libraries-- in an intense, immersive program. </p>
                 </div>
                 <div class="selection-resume">
                 <div class="icons"><i class="fa fa-users"></i></div>
@@ -125,31 +107,32 @@
                 <div class="year">2013 - 2014</div> 
                 <p class="company">Rooster's</p>
                 <p class="position">Front Desk Manager</p>
-                <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh alte rivero nantasy muldaos kelty.</p>
+                <p class="description">Open and close shop daily (key holder); accountable all opening and closing duties.
+                 Responsible for all daytoday monetary transactions and bimonthly inventory. Complete multiple tasks at once, while providing customer service</p>
                 </div>
 
                 <div class="selection-resume">
-                <div class="icons"><i class="fa fa-users"></i></div>
+                <div class="icons"><i class="fa fa-pencil-square-o"></i></div>
                 <!--CHANGE YEAR--> 
                 <div class="year">2011 - 2012</div> 
                 <p class="company">Mr. Arlo</p>
                 <p class="position">Copywriter & Social Media Manager</p>
-                <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh alte rivero nantasy muldaos kelty.</p>
+                <p class="description">Create, schedule, and post all content for various social media platforms. Development and execution of creative marketing promotions. Writing original copy for MrArlo.com. Work closely with PR and marketing firms to coordinate marketing campaigns</p>
                 </div>
                 <div class="selection-resume">
-                <div class="icons"><i class="fa fa-users"></i></div>  
+                <div class="icons"><i class="fa fa-pencil-square-o"></i></div>  
                 <div class="year">2011 - 2011</div> 
-                <p class="company">Nabewist</p>
+                <p class="company">Nabewise</p>
                 <p class="position">Copywriter</p>
-                <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh alte rivero nantasy muldaos kelty.</p>
+                <p class="description">Work remotely, as part of a small team based in New York. Manage daily and weekly deadlines.</p>
                 </div>
                 <!--IF YOU NEED NEXT EMPLOYMENT, COPY SELECTION START'S "DIV SELECTION-RESUME" ... -->
                 <div class="selection-resume last-selection">
-                <div class="icons"><i class="fa fa-camera"></i></div>  
+                <div class="icons"><i class="fa fa-cogs"></i></div>  
                 <div class="year">2008 - 2011</div>   
                 <p class="company">Georgia State University</p>
                 <p class="position">Bachelor of Arts</p>
-                <p class="description last-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh alte rivero nantasy muldaos kelty.</p>
+                <p class="description last-description">English, concentration creative writing</p>
                 </div>
                 <!--AND END HERE-->
               </div>  
@@ -168,49 +151,49 @@
               </div>
               <div id='gallery'>
                 <ul class="ch-grid" id='Grid'>
-                	<li class="mix design">
+                    <li class="mix design">
                     <!--IMAGES ARE STORED IN THE FOLDER "IMAGES". THUMBNAILS ARE MARKED WITH A NUMBER 1 TO 6. ORIGINAL SIZE HAVE A NUMBER AND "X".-->
                     <a class="test-popup-link" href="images/1x.jpg">
-          						<div class="ch-item ch-img-1">
-          							<div class="ch-info">
+                                <div class="ch-item ch-img-1" style=" height: 205px; width: 205px">
+                                    <div class="ch-info">
                           <!--USE WHAT YOU HAVE. FOR EXAMPLE: NAME OF PHOTOGRAPHY AND CLIENT-->
-          								<h3>Wandrlst</h3>
-          								<p>Travel Planning Web App</p>
-          							</div>
-          						</div>
+                                        <h3>Wandrlst</h3>
+                                        <p>Travel Planning Web App</p>
+                                    </div>
+                                </div>
                     </a>
-					        </li>
-        					<li class="mix photoghraphy">
+                            </li>
+                            <li class="mix photoghraphy">
                     <a class="test-popup-link" href="images/2x.jpg">
-          						<div class="ch-item ch-img-2">
-          							<div class="ch-info">
-          								<h3>Spiked</h3>
-          								<p>Mock Restaurant Website</p>
-          							</div>
-          						</div>
+                                <div class="ch-item ch-img-2">
+                                    <div class="ch-info">
+                                        <h3>Spiked</h3>
+                                        <p>Mock Restaurant Website</p>
+                                    </div>
+                                </div>
                     </a>
-        					</li>
-        					<li class="mix illustration">
+                            </li>
+                            <li class="mix illustration">
                     <a class="test-popup-link" href="images/3x.jpg">
-          						<div class="ch-item ch-img-3">
-          							<div class="ch-info">
-          								<h3>Code Rockstars</h3>
-          								<p>Turn-Based Game</p>
-          							</div>
-          						</div>
+                                <div class="ch-item ch-img-3">
+                                    <div class="ch-info">
+                                        <h3>Code Rockstars</h3>
+                                        <p>Turn-Based Game</p>
+                                    </div>
+                                </div>
                     </a>  
-        					</li>
+                            </li>
                   <li class="mix illustration">
                     <a class="test-popup-link" href="images/4x.jpg">
                       <div class="ch-item ch-img-4">
                         <div class="ch-info">
-                          <h3>Use what you have</h3>
-                          <p>Personal</p>
+                          <h3>Currious Nimbus</h3>
+                          <p>A social game</p>
                         </div>
                       </div>
                     </a> 
                   </li>
-                  <li class="mix photoghraphy">
+                  <!-- <li class="mix photoghraphy">
                     <a class="test-popup-link" href="images/5x.jpg">
                       <div class="ch-item ch-img-5">
                         <div class="ch-info">
@@ -229,7 +212,7 @@
                         </div>
                       </div>
                     </a>   
-                  </li>
+                  </li> -->
                 </ul>  
               </div>
               </div>
@@ -282,14 +265,14 @@
             <!--CHANGE "#" TO YOUR TWITTER URL, FACEBOOK URL ETC.-->
             <a href="https://twitter.com/chelseafranz"><i class="fa fa-twitter"></i></a>
             <a href="https://github.com/chelseafranz"><i class="fa fa-github"></i></a>
-            <a href="https://linkedin.com/chelseafranz"><i class="fa fa-linkedin"></i></a>
+            <a href="www.linkedin.com/in/chelseafranz/"><i class="fa fa-linkedin"></i></a>
           </div>
           </div>
         </div>  
     </div>
     <p id="back-top">
-		<a href="#top"><span><i class="fa fa-arrow-up"></i></span></a>
-	  </p>    
+        <a href="#top"><span><i class="fa fa-arrow-up"></i></span></a>
+      </p>    
 
     <script language="javascript">
         function autoResizeDiv()
@@ -319,5 +302,54 @@
             $('body').delay(350).css({'overflow':'visible'});
         })
 </script> 
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type='text/javascript' src="script.js"></script>  
+  <script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  <script type='text/javascript' src='magnific-popup/jquery.magnific-popup.min.js'></script> 
+  <script src="magnific-popup/jquery.magnific-popup.js"></script> 
+  <script src="js/jquery.backstretch.min.js"></script>  
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script type="text/javascript">
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                var mapOptions = {
+                    zoom: 11,
+                    center: new google.maps.LatLng(33.7550, -84.3900),
+                    scrollwheel: false, 
+
+                    styles: [{stylers:[{hue:'#2c3e50'},{saturation:250}]},{featureType:'road',elementType:'geometry',stylers:[{lightness:50},{visibility:'simplified'}]},{featureType:'road',elementType:'labels',stylers:[{visibility:'off'}]}]
+                };
+
+                var mapElement = document.getElementById('map');
+
+                var map = new google.maps.Map(mapElement, mapOptions);
+                
+                 var marker = new google.maps.Marker({
+                            position: map.getCenter(),
+                            map: map,
+                            title: 'Click to zoom'
+                            });
+            }
+  </script>
+
+  
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+
+        <!-- endbuild -->
 </body>
 </html>
